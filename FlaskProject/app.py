@@ -45,5 +45,12 @@ num = reduce_to_single_digit(result)
 
 #Submit butt3200202269on
 if st.button("Result"):
-    st.write("Your name numerology",num)
-    st.write("Your destiny number",bnum)
+    st.markdown(
+        f"<h2>Your Numerology Number is <span style='color:orange;'>{num}</span><h2>",
+        unsafe_allow_html = True
+    )
+    st.markdown(
+        f"<h2>Your Destiny Number is <span style='color:orange;'>{bnum}</span><h2>",
+        unsafe_allow_html=True
+    )
+
